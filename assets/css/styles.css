@@ -1,3 +1,7 @@
+body{
+    font-family: "Carlito", Times, serif;
+}
+
 ul {
     display: flex;
     align-items: center;
@@ -16,6 +20,7 @@ li {
 }
 
 li a {
+    
     display: block;
     color:black;
     text-align: center;
@@ -48,34 +53,44 @@ nav{
     width: 100%;
 }
 #blanco1{
-   /*  background-color: rgb(164, 228, 91); */
-    color: white;
+   /*  background-color: rgb(164, 228, 91); */    
     grid-area: blanco1; 
     min-height: 940px;   
-  
+      
+   
 } 
+
+
+.flecha{
+    font-size: x-large;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column; 
+    /* padding: 250px 0px 0px 0px;
+    row-gap: 420px;  */
+}
+
 
 #blanco2{
    /*  background-color: rgb(86, 107, 61); */
-    color: white;
     grid-area: blanco2;
     min-height: 940px;       
 }
 #content{
     /* background-color: rgb(91, 134, 228); */
-    color: rgb(0, 0, 0);
+    color: rgb(0, 0, 0);    
     grid-area: content;
-    min-height: 940px; 
+    min-height: 540px; 
     display: grid;
-    grid-template-columns: 20% 30% 30% 20%;
     grid-template-areas: 
-       'row1 row1 row1 row1'
-       'row2 row2 row2 row2';  
+       'row1'
+       'row2';  
     
 } 
 
 #row1{
-   /*  background-color: rgb(228, 91, 194); */
+   /* background-color: rgb(228, 91, 194); */
     color: black;
     grid-area: row1;
     min-height: 50%; 
@@ -100,7 +115,7 @@ nav{
 }  */
 .grid-container{
     display: grid;
-    grid-template-columns: 20% 30% 30% 20%;
+    grid-template-columns: 10% 40% 40% 10%;
     grid-template-areas: 
        'header header header header'
        'menu menu menu menu'
@@ -149,18 +164,37 @@ nav{
     border: 0px solid;
 }
 
+.boton-verlibro{
+    
+    padding: 3px 20px 3px 20px;    
+    border-radius: 25px;
+    border: 0px solid;
+    background-color:#F78B42;
+    color: white;
+    font-size: small;
+}
+.titulo{
+    font-family:"Noto Serif Lao";  
+    
+}
+
+.tit{
+    display: block;
+    float: left;
+}
 
 .portada{
 /*     padding: 10px ;
  */   
-    max-height: 170px;
+    max-height: 130px;
 }
 
 .ficha{
     display: flex;
     justify-content: center;
     align-items: center;
-
+    border: groove;
+    padding: 22px 70px 22px 70px;
 }
 
 .info-libro{
@@ -168,22 +202,47 @@ nav{
     justify-content: center;
     align-items: center;
     flex-direction: column;
+    padding: 10px;
+    font-size: small;
+}
+
+.info-libro>div{
+    margin:5px;
+
 }
 
 .content-item{
     display: flex;
-    justify-content: center;    
+    /* justify-content: center; */    
     flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
 }
 
 .fichas-container{
     display: flex;
     justify-content: center;
     align-items: center;
-
     align-content: space-around;       
 }
 
 .fichas-container > div{
     margin: 30px;     
+}
+
+.margen-vacio{
+    min-height: 55px;
+}
+
+#footer{
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    border: groove;
+    border-width: thin;
+          
+
 }
